@@ -1,9 +1,9 @@
 from itertools import count
-from math import factorial
+from math import factorial as fac
 
 def fibo_gen():
      for el in count(1):
-         yield factorial(el)
+         yield fac(el)
 
 gen = fibo_gen()
 x = 0
